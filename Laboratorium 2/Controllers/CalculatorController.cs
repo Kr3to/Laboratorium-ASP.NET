@@ -13,8 +13,8 @@ namespace Laboratorium_2.Controllers
         {
             return View();
         }
-
-        public IActionResult Result(Models.Calculator model)
+        [HttpPost]
+        public IActionResult Result([FromForm]Models.Calculator model)
         {
             if (!model.IsValid()) return BadRequest();
 
