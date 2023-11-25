@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Laboratorium_3_4.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Laboratorium_3_4.Controllers

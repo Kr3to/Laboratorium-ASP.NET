@@ -11,7 +11,7 @@ namespace Laboratorium_3_4
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             builder.Services.AddSingleton<IContactService, MemoryContactService>();
-            builder.Services.AddSingleton<ITravelService, MemoryTravelService>();
+            builder.Services.AddSingleton<IReservationService, MemoryReservationService>();
             builder.Services.AddSingleton<IDateTimeProvider, CurrentDateTimeProvider>();
 
             var app = builder.Build();
