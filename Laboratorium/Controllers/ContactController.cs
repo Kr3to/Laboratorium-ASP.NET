@@ -16,6 +16,12 @@ namespace Laboratorium_3_4.Controllers
             return View(_contactService.FindAll());
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Create(Contact model)
         {
@@ -24,12 +30,6 @@ namespace Laboratorium_3_4.Controllers
                 _contactService.Add(model);
                 return RedirectToAction("index");
             }
-            return View();
-        }
-
-        [HttpGet]
-        public IActionResult Create()
-        {
             return View();
         }
 
@@ -48,6 +48,19 @@ namespace Laboratorium_3_4.Controllers
                 return RedirectToAction("index");
             }
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            return View(_contactService.FindById(id));
+        }
+
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            _contactService.DeleteById(id);
+            return RedirectToAction("Index");
         }
     }
 }
