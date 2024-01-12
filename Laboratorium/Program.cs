@@ -1,4 +1,6 @@
+using Data;
 using Laboratorium_3_4.Models;
+using System.Xml.Linq;
 
 namespace Laboratorium_3_4
 {
@@ -9,10 +11,14 @@ namespace Laboratorium_3_4
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            
             builder.Services.AddControllersWithViews();
             builder.Services.AddSingleton<IContactService, MemoryContactService>();
             builder.Services.AddSingleton<IReservationService, MemoryReservationService>();
             builder.Services.AddSingleton<IDateTimeProvider, CurrentDateTimeProvider>();
+
+            builder.Services.AddDbContext<AppDbContext>();
+            builder.Services.AddTransient<IContactService, EFContactService>();
 
             var app = builder.Build();
 
