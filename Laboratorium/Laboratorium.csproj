@@ -9,7 +9,7 @@
 
   <ItemGroup>
 		<ProjectReference Include="..\Data\Data.csproj" />
-		<ProjectReference Include="..\EFData\EFData.csproj" />
+    <ProjectReference Include="..\EFData\EFData.csproj" />
 	</ItemGroup>
 
 </Project>

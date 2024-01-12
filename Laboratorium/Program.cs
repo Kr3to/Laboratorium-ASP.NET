@@ -18,7 +18,7 @@ namespace Laboratorium_3_4
             builder.Services.AddSingleton<IDateTimeProvider, CurrentDateTimeProvider>();
 
             builder.Services.AddDbContext<AppDbContext>();
-            builder.Services.AddTransient<IContactService, EFContactService>();
+            builder.Services.AddTransient<IReservationService, EFReservationService>();
 
             var app = builder.Build();
 
