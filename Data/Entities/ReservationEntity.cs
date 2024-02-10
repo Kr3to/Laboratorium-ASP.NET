@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
@@ -8,31 +8,36 @@ using System.Threading.Tasks;
 
 namespace Data.Entities
 {
-    [Table("reservation")]
+    [Table("reservations")]
     public class ReservationEntity
     {
         public int Id { get; set; }
         [MaxLength(50)]
         [Required]
 
-        [Column("reservation_date")]
-        public DateTime? Date { get; set; }
+        public DateTime Date { get; set; }
+        [DataType(DataType.Date)]
+        [Required]
 
         public string City { get; set; }
         [MaxLength(50)]
         [Required]
 
         public string Address { get; set; }
-        [MaxLength(50)]
+        
         [Required]
-
         public string Room { get; set; }
+        
         [MaxLength(50)]
         [Required]
         public string Owner { get; set; }
+
+        
         [MaxLength(50)]
         [Required]
-
         public string Price { get; set; }
+
+        /* public int OrganizationId{ get; set; }
+        public OrganizationEntity? Organization { get; set; } */
     }
 }

@@ -1,0 +1,218 @@
+/* Global Styles */
+body {
+  font-family: 'Verdana';
+  background-color: beige;
+  color: #333;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none; /* Remove underlines from links */
+  color: inherit; /* Inherit text color */
+}
+
+a:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+   /* Smooth transition */
+  color: #808080;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: blanchedalmond; /* Grey color */
+  color: black;
+  padding: 15px 0;
+  height: 90px;
+  border-bottom: 2px solid #333;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: black; /* White color */
+}
+
+.navbar-nav {
+  display: flex; /* Make the navigation horizontal */
+  align-items: center; /* Center items vertically */
+  gap: 50px; /* Spacing between nav items */
+}
+
+.nav-link {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #808080;; /* Light grey color on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 30px 0;
+}
+
+.akcja{
+  border: 1px solid black;
+  color: black;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: blanchedalmond; /* Grey color */
+  color: black;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #333;
+}
+
+/* Reservation Form Styles */
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Reservation Details Styles */
+.card {
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  margin-bottom: 10px;
+}
+
+.card-body hr {
+  margin: 20px 0;
+}
+
+/* Reservation List Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #333;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  text-align: left;
+  border: 2px solid #333;
+}
+
+.table th {
+  background-color: blanchedalmond; /* Grey color */
+  color: #333;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Light grey color for even rows */
+}
+
+.table tbody tr:hover {
+  background-color: blanchedalmond; /* Darker grey color on hover */
+  color: #333;
+}
+
+.table a {
+  color: #333; /* Blue color for links */
+  margin-right: 5px;
+}
+
+.table a:hover {
+  text-decoration:solid; /* Underline links on hover */
+  color: #dc3545;
+}
+
+/* Delete Form Styles */
+.form-container {
+  width: 200px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 5px;
+  display: flex;
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #dc3545;;
+}
+
+.form-container button[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #c82333;
+}
+
+.btn-secondary {
+  width: 100px;
+  padding: 10px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px ;
+  position: relative; top: 2px;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+

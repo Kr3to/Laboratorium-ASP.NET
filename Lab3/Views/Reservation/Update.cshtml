@@ -1,0 +1,38 @@
+﻿@model Reservation
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Edit reservation</h1>
+
+<form style="width: 500px" asp-controller="Reservation" asp-action="Update" method="post">
+    <label asp-for="Date">Date:</label>
+    <span class="text-danger" asp-validation-for="Date"></span>
+    <input type="datetime-local" class="form-control mb-3" asp-for="Date" />
+
+    <label asp-for="City">City:</label>
+    <span class="text-danger" asp-validation-for="City"></span>
+    <input class="form-control mb-3" asp-for="City" />
+
+    <label asp-for="Address">Address:</label>
+    <span class="text-danger" asp-validation-for="Address"></span>
+    <input class="form-control mb-3" asp-for="Address" />
+
+    <label asp-for="Room">Room:</label>
+    <span class="text-danger" asp-validation-for="Room"></span>
+    <input class="form-control mb-3" asp-for="Room" />
+
+    <label asp-for="Owner">Owner:</label>
+    <span class="text-danger" asp-validation-for="Owner"></span>
+    <input class="form-control mb-3" asp-for="Owner" />
+
+    <label asp-for="Price">Price:</label>
+    <span class="text-danger" asp-validation-for="Price"></span>
+    <input class="form-control mb-3" asp-for="Price" />
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Save</button>
+    </div>
+</form>
